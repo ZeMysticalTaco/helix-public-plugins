@@ -59,12 +59,21 @@ Commands:
 /CharTakeCustomClass [character] - Takes the custom class of a character.
 ```
 
-## Future
+### Item Menu
+Adds a context menu Item spawner, that allows you to spawn items directly on the ground or in your inventory from the Context Menu.
+
+You must have the CAMI privilege "Helix - Item Menu" or be a Superadmin.
+
+Left Click when not looking at anything to spawn an item to the ground.
+
+Left Click when looking at a player to spawn an item into their inventory.
+
+Right Click to spawn an item into your inventory.
+
+# Future
 *Nothing is guaranteed to stay here, it's more of a personal mental note for me and a tease for you. Something may be released and not even be here.*
 
 ### Item Flipping
 Adds an option to items to allow you to flip an item Vertically or Horizontally.
 
-### Item Menu
-Adds a context menu Item spawner, that allows you to spawn items directly on the ground or in your inventory from the Context Menu.
 
