@@ -67,7 +67,7 @@ function PANEL:Populate( )
         --but helix, as far as I know, doesn't have a way to loop through a sequential index of items that doesn't just involve list looping.
         for k2, v2 in pairs( ix.item.list ) do
             if indexedItems[ k2 ] then continue end --skip if already indexed in another category, saves time.
-
+            if string.find(k2, '_flipped') then continue end -- don't index flipped items.
             if v2.category == k then
                 indexedItems[ k2 ] = true
                 local dbutton = panel:Add( "ixMenuSelectionButton" )

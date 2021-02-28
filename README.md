@@ -70,10 +70,23 @@ Left Click when looking at a player to spawn an item into their inventory.
 
 Right Click to spawn an item into your inventory.
 
+### Item Flipping [BETA]
+Allows you to rotate items horizontally in an inventory.
+*Comes with English, Russian and Korean translation support, accepting contributions for other languages!*
+**THIS PLUGIN IS IN BETA, I EXPECT BUGS AND ISSUES TO ARISE, IF YOU ENCOUNTER THEM PLEASE REPORT THEM IT WOULD MAKE ME VERY HAPPY**
+
+For Developers:
+By default, and this can be disabled in the plugin file, all items that are not identical in proportions will have a separate flipped version generated.
+To disable this for specific items, put this in your item below.
+```
+ITEM.bNoGenerateFlippedItem = true
+```
+For Owners:
+If you don't want items to automatically generate flipped variants, you can set `PLUGIN.autoGenerateFlippedItems` to `false` in the sh_plugin.lua file.
+
+
+
 # Future
 *Nothing is guaranteed to stay here, it's more of a personal mental note for me and a tease for you. Something may be released and not even be here.*
-
-### Item Flipping
-Adds an option to items to allow you to flip an item Vertically or Horizontally.
 
 
