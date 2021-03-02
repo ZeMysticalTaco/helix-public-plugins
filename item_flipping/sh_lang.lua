@@ -7,4 +7,4 @@ ix.lang.stored.russian['rotateItem'] = 'Повернуть'
 ix.lang.stored.russian['rotateNotAllowed'] = 'Этот инвентарь не подходит для повернутой версии этого предмета! (%sx%s)'
 
 ix.lang.stored.korean['rotateItem'] = '회전'
-ix.lang.stored.korean['rotateNotAllowed'] = '이 인벤토리는이 항목의 회전 버전에 맞을 수 없습니다! (%sx%s)'
+ix.lang.stored.korean['rotateNotAllowed'] = '이 아이템을 회전시킬 경우 인벤토리에 들어맞지 않습니다! (%sx%s)'
