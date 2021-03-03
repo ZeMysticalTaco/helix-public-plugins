@@ -89,4 +89,8 @@ If you don't want items to automatically generate flipped variants, you can set 
 # Future
 *Nothing is guaranteed to stay here, it's more of a personal mental note for me and a tease for you. Something may be released and not even be here.*
 
+### Lightweight Administration Module
+Adds a basic administration mod for people not looking for something heavy duty.
 
+### Inventory Extensions
+Adds a set of quality of life extensions to the inventory and exposes several features for developers to build on in plugins.
