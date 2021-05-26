@@ -12,8 +12,8 @@ function PLUGIN:OnContextMenuClose( )
         end )
 
         --for live debugging, uncommenting these will rebuild the panel each time you close the context menu, please don't enable this live.
-        ix.gui.itemmenu:Remove( )
-        vgui.Create( "ixItemMenu" )
+        --ix.gui.itemmenu:Remove( )
+        --vgui.Create( "ixItemMenu" )
     end
 end
 
