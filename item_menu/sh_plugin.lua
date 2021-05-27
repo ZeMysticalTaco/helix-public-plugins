@@ -1,6 +1,6 @@
 PLUGIN.name = 'Admin Item Menu'
 PLUGIN.description = 'Adds an item menu for admins.'
-PLUGIN.author = 'TomSL / ZeMysticalTaco'
+PLUGIN.author = 'TomSL / ZeMysticalTaco & Wolffe'
 
 ix.util.Include( 'cl_plugin.lua' )
 ix.util.Include( 'sv_plugin.lua' )
