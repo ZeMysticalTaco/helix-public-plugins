@@ -142,3 +142,34 @@ function PANEL:Paint( w, h )
 end
 
 vgui.Register( "ixItemMenu", PANEL, "DFrame" )
+
+PANEL = {}
+
+function PANEL:Init()
+	if (IsValid(ix.gui.itemmenutoggle)) then
+		ix.gui.itemmenutoggle:Remove()
+	end
+
+	ix.gui.itemmenutoggle = self
+
+	self:SetSize(100, 100)
+	self:MakePopup()
+	self:SetScreenLock( true )
+	self:ShowCloseButton( false )
+	self:SetVisible( false )
+	self:SetTitle("")
+	self.opensessame = self:Add("DButton")
+	self.opensessame:Dock(FILL)
+	self.opensessame:SetText("Open Item Menu")
+	self.opensessame.DoClick = function()
+		vgui.Create("ixItemMenu")
+		ix.gui.itemmenu:SetVisible(true)
+		ix.gui.itemmenu:MoveTo( ScrW( ) - 350, 0, 0.2, 0, -1 )
+	end
+end
+
+function PANEL:Paint(w, h)
+	surface.SetDrawColor( 50, 50, 50, 150 )
+end
+
+vgui.Register("ixItemMenuToggle", PANEL, "DFrame")
