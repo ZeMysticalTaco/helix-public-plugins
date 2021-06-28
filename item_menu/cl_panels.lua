@@ -54,18 +54,18 @@ function PANEL:Populate( )
 	local indexedItems = { }
 	local itemcategorys = { }
 
-	for k, v in pairs( ix.item.list ) do
+	for k, v in SortedPairs( ix.item.list ) do
 		itemcategorys[ v.category or v.Category ] = true
 	end
 
-	for k, v in pairs( itemcategorys ) do
+	for k, v in SortedPairs( itemcategorys ) do
 		local cat = self.categorylist:Add( k )
 		local panel = vgui.Create( "DScrollPanel" )
 		panel:SetSize( self:GetWide( ), 250 )
 
 		--so it would theoretically be faster to have some sort of sorted index for this that has sequential numerical sorting...
 		--but helix, as far as I know, doesn't have a way to loop through a sequential index of items that doesn't just involve list looping.
-		for k2, v2 in pairs( ix.item.list ) do
+		for k2, v2 in SortedPairs( ix.item.list ) do
 			if indexedItems[ k2 ] then continue end --skip if already indexed in another category, saves time.
 			if string.find(k2, '_flipped') then continue end -- don't index flipped items.
 			if v2.category == k then
