@@ -84,7 +84,12 @@ ITEM.bNoGenerateFlippedItem = true
 For Owners:
 If you don't want items to automatically generate flipped variants, you can set `PLUGIN.autoGenerateFlippedItems` to `false` in the sh_plugin.lua file.
 
+# Future Paid Plugins
 
+### TomsAI
+https://youtu.be/YVcCA82GVgk
+
+### TomScript
 
 # Future
 *Nothing is guaranteed to stay here, it's more of a personal mental note for me and a tease for you. Something may be released and not even be here.*
